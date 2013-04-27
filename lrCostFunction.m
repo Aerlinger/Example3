@@ -5,14 +5,13 @@ function [J, grad] = lrCostFunction(theta, X, y, lambda)
 %   theta as the parameter for regularized logistic regression and the
 %   gradient of the cost w.r.t. to the parameters. 
 %
-% PRE: theta [n, k] (Row Vec)
+% Example Vectors: 
+%      theta [n, k] (Row Vec)
 %      X [m, n]
 %      y [5000, 1] (Row Vec)
 
     % Initialize some useful values
     m = length(y); % number of training examples
-    n = size(theta, 1); % number of features
-    %k = size(theta, 2); % number of output possibilities (1-10)
 
     % You need to return the following variables correctly 
     J = 0;
